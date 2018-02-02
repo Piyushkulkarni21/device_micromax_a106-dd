@@ -17,7 +17,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
-LOCAL_PATH := device/highscreen/giraffe
+LOCAL_PATH := device/micromax/a106
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -93,7 +93,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/root/init.sprout.rc:root/init.sprout.rc \
     $(LOCAL_PATH)/rootdir/root/fstab.sprout:root/fstab.sprout
 
-DEVICE_PACKAGE_OVERLAYS := device/highscreen/giraffe/overlay
+DEVICE_PACKAGE_OVERLAYS := device/micromax/a106/overlay
 
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
@@ -147,7 +147,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES +=  libstlport    
     
 # call the proprietary setup
-$(call inherit-product, vendor/highscreen/giraffe/giraffe-vendor.mk)
+$(call inherit-product, vendor/micromax/a106/a106-vendor.mk)
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
 	ro.crypto.state=unencrypted \
