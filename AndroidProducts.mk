@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cm_giraffe.mk
+    $(LOCAL_DIR)/cm_a106.mk
